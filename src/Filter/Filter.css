@@ -1,0 +1,14 @@
+.filter-container {
+    text-align: center;
+    background-color: #dedede;
+    padding: 10px;
+}
+
+#print-type {
+    width: 75px;
+    margin-right: 15px;
+}
+
+#book-type {
+    width: 250px
+}
