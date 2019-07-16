@@ -1,0 +1,16 @@
+.lists {
+    height: 210px;
+    border-bottom: 1px gray solid;
+}
+
+.lists-text-container {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+a{
+    display:inline-block;
+}

@@ -8,12 +8,15 @@ export class App extends Component {
     super(props);
     this.state = {
       books: [],
-      err: null
+      totalItems: 0,
     }
   }
 
-  renderBooks = data => {
-    this.setState({books: data})
+  fetchData = data => {
+    this.setState({
+      books: data.items,
+      totalItems: data.totalItems
+    })
   }
 
   render() {
@@ -22,8 +25,8 @@ export class App extends Component {
         <div className='container'>
           <h1 className='google-title'>Google Book Search</h1>
         </div>
-        <Forms />
-        <Booklists />
+        <Forms fetchData={this.fetchData}/>
+        <Booklists books={this.state.books} arrayLength={this.state.totalItems}/>
       </div>
     )
   }
