@@ -22,3 +22,7 @@ span, form {
 #book-type {
     width: 250px
 }
+
+#print-type, #book-type {
+    border: 1px;
+}
